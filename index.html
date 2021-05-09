@@ -1,19 +1,33 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>HTML5 WebGL 3D樱花飘落动画DEMO演示</title>
+  <title>给张美娥女士的一封信</title>
   <link rel="stylesheet" href="normalize.min.css">
 <link rel="stylesheet" href="style.css">
 <script src="prefixfree.min.js"></script>
-
+    <style>
+        h1 {
+            font-size: 60px;
+            color:palevioletred;
+        }
+        p {
+            position:fixed;top:500px;left:700px;
+            font-size:40px;
+            color:palevioletred;
+        }
+    </style>
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<canvas id="sakura"></canvas>
-<div class="btnbg">
-<button type="button" onclick="toggleAnimation(this)">Stop</button>
-</div>
+    <canvas id="sakura"></canvas>
+   
+    <h1>祝天下最好的妈妈——张美娥女士：</h1>
+    <p>
+        母亲节快乐！感谢21年来的照顾和养育！！！<br /><br />
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;您的儿子，王俊杰<br />
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2021年5月9日制
+    </p>
 
 <!-- sakura shader -->
 <script id="sakura_point_vsh" type="x-shader/x_vertex">
